@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
 	use 'rafamadriz/friendly-snippets'
+	use 'github/copilot.vim'
 	use {
 		'nvim-telescope/telescope.nvim',
 		tag = '0.1.8',

@@ -21,3 +21,7 @@ Questa cartella contiene la configurazione personalizzata per Neovim. Include va
    ```sh
    git clone <repository-url> ~/.config/nvim
    ```
+
+## Attenzione
+
+Per utilizzare il Copilot utilizzare il comando Copilot setup
