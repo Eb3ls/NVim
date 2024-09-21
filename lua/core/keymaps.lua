@@ -15,9 +15,9 @@ vim.cmd('filetype plugin indent on')
 
 -- Leader key
 vim.g.mapleader = ' ' -- Space as the leader key
--- Spazio w per scrivere :w
+-- Spazio+w per scrivere :w
 vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = true})
--- jk per scrivere esc
+-- j+k per scrivere esc
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true, silent = true })
--- Spazio h per pulire la ricerca
+-- Spazio+h per pulire la ricerca
 vim.api.nvim_set_keymap('n', '<Leader>h', ':nohlsearch<CR>', { noremap = true, silent = true })

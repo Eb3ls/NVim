@@ -33,27 +33,14 @@ end
 
 -- Importa lspconfig
 local lspconfig = require("lspconfig")
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- Configurazione dei server LSP
--- Configura ciascun server LSP specifico
-lspconfig.ts_ls.setup({
-    on_attach = on_attach,
-})
-lspconfig.html.setup({
-    on_attach = on_attach,
-})
-lspconfig.cssls.setup({
-    on_attach = on_attach,
-})
-lspconfig.jsonls.setup({
-    on_attach = on_attach,
-})
-lspconfig.pyright.setup({
-    on_attach = on_attach,
-})
-lspconfig.clangd.setup({
-    on_attach = on_attach,
-})
-lspconfig.lua_ls.setup({
-    on_attach = on_attach,
-})
+local servers = { "ts_ls", "html", "cssls", "jsonls", "pyright", "clangd", "lua_ls" }
+
+for _, lsp in ipairs(servers) do
+    lspconfig[lsp].setup({
+        on_attach = on_attach,
+        capabilities = capabilities,
+    })
+end
