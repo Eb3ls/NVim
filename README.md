@@ -6,13 +6,25 @@ Questa cartella contiene la configurazione personalizzata per Neovim. Include va
 
 ## Struttura della Cartella
 
-- `init.lua`: Il file principale di configurazione di Neovim.
+La configurazione è organizzata in modo modulare per una migliore manutenibilità. Ecco la struttura principale dei file e delle cartelle:
+
+- `init.lua`: Il file principale di configurazione di Neovim. Qui viene utilizzato `lazy.nvim` per gestire e configurare i plugin, e vengono importati i vari moduli di configurazione.
 - `lua/`: Contiene i file di configurazione modulari.
-  - `core/`: Configurazioni di base e plugin manager.
-    - `plugins.lua`: Configurazione di `packer.nvim` per la gestione dei plugin.
-    - `settings.lua`: Impostazioni generali di Neovim.
-    - `keymaps.lua`: Mappature delle chiavi personalizzate.
-    - `plugin_config/`: Configurazioni specifiche per ciascun plugin.
+
+  - `settings.lua`: Impostazioni generali di Neovim (es. comportamento di editing, interfaccia utente).
+  - `keymaps.lua`: Mappature personalizzate delle chiavi per Neovim.
+
+  - `plugins/`: Contiene le configurazioni specifiche dei vari plugin.
+    - `telescope.lua`: Configurazione per `telescope.nvim`, un fuzzy finder per cercare file, simboli, ecc.
+    - `treesitter.lua`: Configurazione per `nvim-treesitter`, che gestisce il syntax highlighting avanzato.
+    - `nvim-tree.lua`: Configurazione per il file explorer `nvim-tree.lua`.
+    - `lualine.lua`: Configurazione per `lualine.nvim`, una barra di stato personalizzabile.
+    - `lsp-config.lua`: Configurazione per `nvim-lspconfig`, che fornisce supporto per vari Language Server Protocol (LSP).
+    - `gruvbox.lua`: Configurazione del tema `gruvbox.nvim`.
+    - `git-stuff.lua`: Configurazioni per lavorare con Git, utilizzando `gitsigns.nvim` e `vim-fugitive`.
+    - `emmet.lua`: Configurazione per `emmet-vim`, per abbreviazioni HTML e CSS.
+    - `copilot.lua`: Configurazione per GitHub Copilot.
+    - `completions.lua`: Configurazione per il completamento automatico del codice.
 
 ## Installazione
 

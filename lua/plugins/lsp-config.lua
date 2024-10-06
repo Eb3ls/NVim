@@ -27,6 +27,7 @@ return {
         "neovim/nvim-lspconfig",
         lazy = false,
         config = function()
+            local lspconfig_ok, lspconfig = pcall(require, 'lspconfig')
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
             local lspconfig = require("lspconfig")
 

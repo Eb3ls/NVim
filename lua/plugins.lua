@@ -8,5 +8,6 @@ require("lazy").setup {
 	{ import = "plugins.gruvbox" }, -- Tema
 	{ import = "plugins.git-stuff" }, -- Comandi git inline e linee di diff
 	{ import = "plugins.emmet" }, -- Abbreviazioni Emmet
-	{ import = "plugins.copilot"} -- Copilot
+	{ import = "plugins.copilot"}, -- Copilot
+	{ import = "plugins.completions"} -- Completions
 }
