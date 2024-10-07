@@ -9,14 +9,14 @@ vim.o.cursorline = true -- Highlight the current line
 vim.o.termguicolors = true -- Enable 24-bit RGB colors
 
 -- Syntax highlighting and filetype plugins
-vim.cmd('syntax enable')
-vim.cmd('filetype plugin indent on')
+vim.cmd("syntax enable")
+vim.cmd("filetype plugin indent on")
 
 -- Leader key
-vim.g.mapleader = ' ' -- Space as the leader key
+vim.g.mapleader = " " -- Space as the leader key
 -- Spazio+w per scrivere :w
-vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Leader>w", ":w<CR>", { noremap = true, silent = true })
 -- j+k per scrivere esc
-vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "jk", "<ESC>", { noremap = true, silent = true })
 -- Spazio+h per pulire la ricerca
-vim.api.nvim_set_keymap('n', '<Leader>h', ':nohlsearch<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>h", ":nohlsearch<CR>", { noremap = true, silent = true })
