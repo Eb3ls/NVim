@@ -20,3 +20,9 @@ vim.api.nvim_set_keymap("n", "<Leader>w", ":w<CR>", { noremap = true, silent = t
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", { noremap = true, silent = true })
 -- Spazio+h per pulire la ricerca
 vim.api.nvim_set_keymap("n", "<Leader>h", ":nohlsearch<CR>", { noremap = true, silent = true })
+-- Spazio+e per aprire il file explorer
+vim.api.nvim_set_keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+-- "+" + y per copiare il contenuto nella clipboard
+vim.api.nvim_set_keymap("n", "+y", '"+y', { noremap = true, silent = true })
+-- "+" + p per incollare il contenuto dalla clipboard
+vim.api.nvim_set_keymap("n", "+p", '"+p', { noremap = true, silent = true })

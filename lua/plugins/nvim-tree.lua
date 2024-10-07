@@ -7,9 +7,8 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
-			-- Ctrl+n apre o chiude il pannello
-			vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-			vim.keymap.set("n", "<leader>bf", ":NvimTreeFindFile<CR>", { noremap = true, silent = true })
+			-- Spazio + e apre o chiude il pannello
+			vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
 			-- Configurazione di nvim-tree
 			require("nvim-tree").setup({})

@@ -34,6 +34,22 @@ La configurazione è organizzata in modo modulare per una migliore manutenibilit
    git clone <repository-url> ~/.config/nvim
    ```
 
+   NB: Su linux conviene installare xclip per poter utilizzare il copia e incolla con il comando `+` e `*`
+
+## Lista dei comandi
+
+    j + k = esci dalla modalità di inserimento
+    "+" + y = copia il testo selezionato nella clipboard
+    "+" + p = incolla il testo dalla clipboard
+    Spazio + w = salva il file
+    Spazio + h = pulisci la ricerca
+    Spazio + e = apri/chiudi il file explorer
+    Ctrl + y + , = enter per emmet
+    Spazio + g + p = mostra differenze con il commit precedente
+    Spazio + p + f = apri la ricerca file
+    Spazio + o + f = apri i file recenti
+    Spazio + f + g = apri la ricerca per il progetto
+
 ## Attenzione
 
 Per utilizzare il Copilot utilizzare il comando Copilot setup
