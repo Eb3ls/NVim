@@ -25,6 +25,7 @@ La configurazione è organizzata in modo modulare per una migliore manutenibilit
     - `emmet.lua`: Configurazione per `emmet-vim`, per abbreviazioni HTML e CSS.
     - `copilot.lua`: Configurazione per GitHub Copilot.
     - `completions.lua`: Configurazione per il completamento automatico del codice.
+    - `formatter.lua`: Configurazione per formattare il codice con `formatter.nvim`.
 
 ## Installazione
 
@@ -49,6 +50,8 @@ La configurazione è organizzata in modo modulare per una migliore manutenibilit
     Spazio + p + f = apri la ricerca file
     Spazio + o + f = apri i file recenti
     Spazio + f + g = apri la ricerca per il progetto
+    Spazio + v + s = dividi il terminale verticalmente
+    Ctrl + w + w = cambia il focus tra i terminali
 
 ## Attenzione
 
