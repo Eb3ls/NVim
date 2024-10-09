@@ -42,6 +42,7 @@ La configurazione è organizzata in modo modulare per una migliore manutenibilit
     j + k = esci dalla modalità di inserimento
     "+" + y = copia il testo selezionato nella clipboard
     "+" + p = incolla il testo dalla clipboard
+    c + a + l + w = sostituisci tutte le occorrenze della parola selezionata
     Spazio + w = salva il file
     Spazio + h = pulisci la ricerca
     Spazio + e = apri/chiudi il file explorer
@@ -52,6 +53,7 @@ La configurazione è organizzata in modo modulare per una migliore manutenibilit
     Spazio + f + g = apri la ricerca per il progetto
     Spazio + v + s = dividi il terminale verticalmente
     Ctrl + w + w = cambia il focus tra i terminali
+    Spazio + c + a + l = cambia tutte le occorrenze della parola sul cursore
 
 ## Attenzione
 
