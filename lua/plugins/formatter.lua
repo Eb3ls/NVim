@@ -16,21 +16,21 @@ return {
 				json = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
-				python = { "ast-grep" },
+				python = { "black" },
 				c = { "ast-grep" },
 				cpp = { "ast-grep" },
 			},
-			format_on_save = {
+			format_after_save = {
 				lsp_fallback = true,
-				async = false,
-				timeout_ms = 1000,
+				async = true,
+				timeout_ms = 5000,
 			},
 		})
 
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 			conform.format({
 				lsp_fallback = true,
-				async = false,
+				async = true,
 				timeout_ms = 1500,
 			})
 		end, { desc = "Format file or range (in visual mode)" })
